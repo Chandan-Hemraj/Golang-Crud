@@ -243,6 +243,7 @@ func deleteProfile(w http.ResponseWriter, r *http.Request) {
 		}
 		return
 	}
+	ResponseHandler("User deleted successfully", nil, 200, w)
 }
 
 func getAllUsers(w http.ResponseWriter, r *http.Request) {
